@@ -13,6 +13,7 @@ def main():
     path = sys.argv[1]
     raw_df = pd.read_csv(path,header=None, index_col=False)
     results_array = [['Experiment','Lambda Max','Absorbance']]
+    print("Hey")
     start_wavelength = float(input("Please enter the min wavelength: "))
     end_wavelength = float(input("Please enter the max wavelength: "))
     column_index_raw_df = 0
